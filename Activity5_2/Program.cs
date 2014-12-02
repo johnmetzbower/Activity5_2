@@ -7,22 +7,27 @@ using System.Threading.Tasks;
 namespace Activity5_2
 {
     class Program
+    {
+        static void LoadList(int iMax)
         {
-            static List<int> numList = new List<int>();
-            static void Main(string[] args)
+            for (int i = 1; i <= 10; i++)
             {
-                LoadList(10);
-                foreach (int i in numList)
-                {
-                System.Console.WriteLine(i);
-                }
-                Console.ReadLine();
-            }
-            static void LoadList(int imax);
-            {       
-                for (int i = 1; i <= 10; 1++)
-                {
-                    numList.Add(i);
-                }
+                numList.Add(i);
             }
         }
+
+        static List<int> numList = new List<int>();
+
+        static void Main(string[] args)
+        {
+            LoadList(10);
+            foreach (int i in numList)
+            {
+                System.Console.WriteLine(i);
+            }
+            Console.ReadLine();
+        }
+
+        
+    }
+}
