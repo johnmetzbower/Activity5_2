@@ -8,16 +8,9 @@ namespace Activity5_2
 {
     class Program
     {
-        static void LoadList(int iMax)
-        {
-            for (int i = 1; i <= 10; i++)
-            {
-                numList.Add(i);
-            }
-        }
+        
 
         static List<int> numList = new List<int>();
-
         static void Main(string[] args)
         {
             LoadList(10);
@@ -27,6 +20,14 @@ namespace Activity5_2
             }
             Console.ReadLine();
         }
+        static void LoadList(int iMax)
+        {
+            for (int i = 1; i <= 10; i++)
+            {
+                numList.Add(i);
+            }
+        }
+        
 
         
     }
