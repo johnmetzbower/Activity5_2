@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Activity5_2
 {
-    class Program;
+    class Program
     {
         
 
